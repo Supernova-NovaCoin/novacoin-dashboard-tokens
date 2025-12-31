@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-900 text-gray-100 antialiased;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-800;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-600 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-500;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white font-medium
+           rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-secondary {
+    @apply px-4 py-2 bg-gray-700 hover:bg-gray-600 text-white font-medium
+           rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-success {
+    @apply px-4 py-2 bg-green-600 hover:bg-green-700 text-white font-medium
+           rounded-lg transition-colors disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white
+           placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:ring-1
+           focus:ring-purple-500 transition-colors;
+  }
+
+  .card {
+    @apply bg-gray-800 rounded-lg border border-gray-700;
+  }
+
+  .badge {
+    @apply px-2 py-1 text-xs font-medium rounded-full;
+  }
+
+  .badge-green {
+    @apply bg-green-900/50 text-green-400 border border-green-500/50;
+  }
+
+  .badge-yellow {
+    @apply bg-yellow-900/50 text-yellow-400 border border-yellow-500/50;
+  }
+
+  .badge-red {
+    @apply bg-red-900/50 text-red-400 border border-red-500/50;
+  }
+
+  .badge-blue {
+    @apply bg-blue-900/50 text-blue-400 border border-blue-500/50;
+  }
+
+  .badge-purple {
+    @apply bg-purple-900/50 text-purple-400 border border-purple-500/50;
+  }
+
+  .feature-toggle {
+    @apply flex items-center justify-between p-3 bg-gray-700/50 rounded-lg
+           border border-gray-600 hover:border-gray-500 transition-colors cursor-pointer;
+  }
+
+  .feature-toggle-active {
+    @apply border-purple-500 bg-purple-900/20;
+  }
+
+  .code-block {
+    @apply bg-gray-900 rounded-lg p-4 font-mono text-sm overflow-x-auto;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent;
+  }
+}
