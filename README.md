@@ -95,9 +95,9 @@ Multi-token standard supporting both fungible and non-fungible:
 
 ## Related Repositories
 
-- [novacoin](https://github.com/novacoin/novacoin) - Core Blockchain
-- [novacoin-sdk-ts](https://github.com/novacoin/novacoin-sdk-ts) - TypeScript SDK
-- [novacoin-explorer](https://github.com/novacoin/novacoin-explorer) - Block Explorer
+- [novacoin](https://github.com/Supernova-NovaCoin/novacoin) - Core Blockchain
+- [novacoin-sdk-ts](https://github.com/Supernova-NovaCoin/novacoin-sdk-ts) - TypeScript SDK
+- [novacoin-explorer](https://github.com/Supernova-NovaCoin/novacoin-explorer) - Block Explorer
 
 ## License
 
